@@ -12,7 +12,20 @@ const users = [
     genres: ["kpop", "rock"],
     score: 153
   },
+
 ]
+
+let tableItem = [];
+
+for (let i of users) {
+  tableItem.push({
+    fullName: `${i.fullName.firstName} ${i.fullName.lastName}`,
+    genres: i.genres,
+    score: i.score
+  })
+}
+
+console.log(tableItem);
 
 /*
   Você recebeu uma array de objetos da nova desenvolvedora backend do seu trabalho dos sonhos. Porém, percebeu que não vai precisar de todas essas informações! Por conta disso, será necessário criar um novo objeto apenas com aquilo que será utilizado
